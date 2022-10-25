@@ -1,0 +1,19 @@
+Code part:
+
+- MV Separation: FIX: Why there is a model responsibility in the view? One example, the view should not check whether the length of the boat is valid or not. It is not its responsibility.
+ 
+- Hidden Dependencies: Fix: The view and the controller are highly coupled by hidden dependencies, such as the hardcoded integers that are used for menu options. There are more Hidden Dependencies between the two, the hardcoded strings.
+
+- Why does the app view invokes the controller? That is not according to GRASP.
+
+- Furthermore, there is a cyclic relationship between the view and the controller, where the app view has an association with the controller and the controller has associations with the boat view and the member view. 
+
+- Why the controller is handling the operations that it should not handle, one example is, the member insertions!
+
+- OO-Design: The boat type should be handled properly, but not with strings.
+
+
+
+Diagram part:
+
+Diagrams: FIX: The class diagram does not show the role names for the associations, the class diagram does not show all the dependencies and the packages. Furthermore, the sequence diagrams do not conform with implementation; the user interacts with UI i.e. the view, and not with the controller. Show the types and the objects in the sequence diagram. The diagrams are nice and readable but they need improvements.
